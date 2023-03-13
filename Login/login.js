@@ -1,7 +1,6 @@
+// creating a javascript part for the hide option in the password entering part of the login and signup.
 const forms = document.querySelector(".forms"),
-pwShowHide = document.querySelectorAll(".eye-icon"),
-links = document.querySelectorAll(".link");
-
+pwShowHide = document.querySelectorAll(".eye-icon");
 pwShowHide.forEach(eyeIcon => {
 eyeIcon.addEventListener("click", () => {
   let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
@@ -19,9 +18,4 @@ eyeIcon.addEventListener("click", () => {
 })
 })      
 
-links.forEach(link => {
-link.addEventListener("click", e => {
- e.preventDefault(); //preventing form submit
- forms.classList.toggle("show-signup");
-})
-})
+
